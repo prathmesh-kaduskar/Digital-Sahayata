@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Sahayata</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><i>D</i><div>Digital Sahayata<small id="tag"></small></div></div>
+  <nav id="nav"></nav>
+  <select id="lang" aria-label="Language">
+    <option value="mr">मराठी</option><option value="hi">हिन्दी</option><option value="en">English</option>
+    <option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option><option value="ta">தமிழ்</option>
+    <option value="te">తెలుగు</option><option value="bn">বাংলা</option><option value="or">ଓଡ଼ିଆ</option>
+  </select>
+  <button id="speak" class="speak" type="button" aria-pressed="false"><span aria-hidden="true">🔊</span> <span id="speakL"></span></button>
+</header>
+
+<p id="vmsg" class="vmsg" role="status" hidden></p>
+<main>
+<div class="hero">
+  <div>
+    <h1 id="h1"></h1>
+    <p id="hp"></p>
+    <a class="btn" href="#help" id="cta"></a>
+  </div>
+  <div class="bubbles" id="bub"></div>
+</div>
+
+<section>
+  <h2 id="popT"></h2><p class="sub" id="popS"></p>
+  <div class="grid" id="pop"></div>
+</section>
+
+<section>
+  <h2 id="howT"></h2><p class="sub" id="howS"></p>
+  <div class="grid steps" id="steps"></div>
+</section>
+
+<section id="help">
+  <div class="help">
+    <div><h2 id="hT"></h2><p class="sub" id="hS"></p></div>
+    <ul id="hl"></ul>
+  </div>
+</section>
+</main>
+
+<footer><div id="fnav"></div><div id="copy"></div></footer>
+
+<script src="script.js"></script>
+<script src="voice.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
